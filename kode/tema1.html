@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function() {
+            jQuery('body').fadeIn();
+            jQuery('a').on('click', function(event) {
+                var thetarget = this.getAttribute('target')
+                if (thetarget != "_blank") {
+                    var thehref = this.getAttribute('href')
+                    event.preventDefault();
+                    jQuery('body').fadeOut(function() {
+                        alert(thehref)
+                        //window.location = thehref
+                    });
+                }
+            });
+        });
+        setTimeout(function() {
+            jQuery('body').fadeIn();
+        }, 1000)
+
+    </script>
+
+    <header>
+<nav>
+    <a href="welcome.html">Forside</a>
+    <a href="tema1.html">Tema 1</a>
+    <a href="tema2.html">Tema 2</a>
+    <a href="tema3.html">Tema 3</a>
+    <a href="tema4.html">Tema 4</a>
+    <a href="om.html">Om</a>
+</nav>
+        <img src="img/1461139991_logo1.png" class="logo" alt="Kea logo">
+    </header>
+
+    <section id="tema1">
+        <div class="sectionwrapper">
+            <div class="beskrivelsetema11">
+                <h1>Tema 1 - Grundlæggende webdesign</h1>
+                <p>Det første tema på studiet var grundlæggende webdesign. I dette forløb skulle vi igennem 4 forskellige områder: Content first, HTML og CSS, User interface og Responsive webdesign.</p>
+
+                <p>Vi blev inddelt på forskellige stilarter. jeg fik tildelt stilarten Bauhaus. Ved at arbejde med denne stilart blev vi introduceret til indesign og photoshop hvor vi arbejdede med styletiles og moodboards, som kan ses nedenunder</p>
+            </div>
+
+            <div class="content1">
+                <div class="styletile1">
+                    <img src="img/Untitled-6.jpg" class="st1" alt="">
+                </div>
+
+                <div class="styletile2">
+                    <img src="img/Untitled-7.jpg" class="st2" alt="">
+                </div>
+
+                <div class="styletile3">
+                    <img src="img/Untitled-8.jpg" class="st3" alt="">
+                </div>
+            </div>
+
+            <div class="beskrivelsetema12">
+                <p>Til denne stilart skulle vi lave et stilartsite. Dette skulle lære os det grundlæggende ved webdesign. Ved at lave dette sign lærte vi, splashart, ikon, flexbox og grundlæggende html/css. Nedenunder er der links til det første udkast af sitet og det endelige site </p>
+
+                <div class="links">
+                    <p>
+                        <a href="http://12tak.dk/kea/01-web/02-html/stilartsite/v1/index.html">Første udkast</a>
+                    </p>
+                    <p>
+                        <a href="http://12tak.dk/kea/01-web/04-responsive/stilartsite/final/">Endelige site</a>
+                    </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
